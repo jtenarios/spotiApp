@@ -10,10 +10,17 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 // Importar rutas
 import { RouterModule } from '@angular/router';
+
+// Importar rutas
 import { ROUTES } from './app.routes';
 
 // Para poder trabajar con peticones Http
 import { HttpClientModule } from "@angular/common/http";
+
+// Pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +28,10 @@ import { HttpClientModule } from "@angular/common/http";
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
